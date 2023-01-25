@@ -7,9 +7,10 @@ import ExecutePassButton from './components/ExecutePassButton';
 import { useGameContext } from './Context/GameContext.js';
 
 function App() {
-  const { deck, setDeck, playerOneHand, setPlayerOneHand } = useGameContext();
+  const { deck, setDeck, playerOneHand, setPlayerOneHand, selectedCard, setSelectedCard } =
+    useGameContext();
   // const [playerOneHand, setPlayerOneHand] = useState([]);
-  const [selectedCard, setSelectedCard] = useState();
+  // const [selectedCard, setSelectedCard] = useState();
   const [playerTwoHand, setPlayerTwoHand] = useState([]);
   const [playerThreeHand, setPlayerThreeHand] = useState([]);
   const [from, setFrom] = useState('deck');

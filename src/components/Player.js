@@ -7,7 +7,7 @@ export default function Player({
   hand,
   setFrom,
   setSelectedCard,
-  selectedCard,
+  // selectedCard,
   to,
 }) {
   return (
@@ -20,7 +20,7 @@ export default function Player({
         player={player}
         cards={hand}
         setFrom={setFrom}
-        selectedCard={selectedCard}
+        // selectedCard={selectedCard}
         setSelectedCard={setSelectedCard}
       />
     </div>
