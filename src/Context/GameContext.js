@@ -4,8 +4,13 @@ import initialCards from '../cards-data';
 const GameContext = createContext();
 const GameProvider = ({ children }) => {
   const [deck, setDeck] = useState(initialCards);
+  const [playerOneHand, setPlayerOneHand] = useState([]);
 
-  return <GameContext.Provider value={{ deck, setDeck }}>{children}</GameContext.Provider>;
+  return (
+    <GameContext.Provider value={{ deck, setDeck, playerOneHand, setPlayerOneHand }}>
+      {children}
+    </GameContext.Provider>
+  );
 };
 const useGameContext = () => {
   const context = useContext(GameContext);
